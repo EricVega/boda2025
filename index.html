@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorena & Miquel - Nuestra Boda</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Encabezado -->
@@ -12,7 +12,7 @@
         <nav>
             <ul>
                 <li><a href="#welcome">¡Bienvenidos!</a></li>
-                <li><a href="#event">Eventos</a></li>
+                <li><a href="#evento">Eventos</a></li>
                 <li><a href="#rsvp">Confirma tu Asistencia</a></li>
                 <li><a href="#photos">Nuestras Fotos</a></li>
             </ul>
@@ -28,5 +28,37 @@
         <p>26 Abril 2025</p>
         <p>We are waiting for you!</p>
     </section>
+
+    <!-- Sección de Información del Evento -->
+    <section id="evento" class="section">
+        <h2>Detalles del Evento</h2>
+        <p><strong>Fecha:</strong> 26 de Abril de 2025</p>
+        <p><strong>Ubicación:</strong> Estartit, Catalunya, Spain</p>
+        <div id="mapa">
+            <!-- Incrusta aquí el mapa de Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11850.250788172778!2d3.177102996273129!3d42.05255678923292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba5a167d362243%3A0x8cf5dde26fda5090!2s17258%20Estartit%2C%20Girona!5e0!3m2!1ses!2ses!4v1731421012577!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Sección de RSVP -->
+    <section id="rsvp" class="section">
+        <h2>Confirma tu Asistencia</h2>
+        <form action="https://formsubmit.co/tu-email" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <!-- Pie de Página -->
+    <footer>
+        <p>Gracias por acompañarnos en este día tan especial</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,218 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+}
+/* Navegación fija */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Color de fondo */
+    padding: 1px 0;
+   /* z-index: 10;*/
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Hero */
+.hero {
+    background-image: url('/img/fondo_flores.jpg'); /* Usa tu imagen aquí */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.2rem;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .section p {
+        font-size: 0.9rem;
+    }
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    form input, form button {
+        width: auto;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Estilos para la sección de fondo floral */
+.flower-background {
+    background-image: url('/img/loriquel.jpg'); /* Cambia la ruta según la ubicación en GitHub */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: #333; /* Color del texto sobre la imagen */
+    text-align: center;
+}
+
+.flower-background h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.flower-background p {
+    font-size: 1.2rem;
+}
+
+/* Sección de Información del Evento */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+#evento p {
+    margin: 10px 0;
+}
+
+/* Formulario de Confirmación (RSVP) */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
