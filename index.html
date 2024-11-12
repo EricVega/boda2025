@@ -3,37 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boda de [Nombre] & [Nombre]</title>
+    <title>Lorena & Miquel - Nuestra Boda</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Boda de [Nombre] & [Nombre]</h1>
-        <p>Únete a nosotros el [Fecha] en [Lugar]</p>
+    <!-- Encabezado -->
+    <header class="hero">
+        <nav>
+            <ul>
+                <li><a href="#welcome">¡Bienvenidos!</a></li>
+                <li><a href="#event">Eventos</a></li>
+                <li><a href="#rsvp">Confirma tu Asistencia</a></li>
+                <li><a href="#photos">Nuestras Fotos</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Lorena & Miquel</h1>
+        </div>
     </header>
 
-    <section id="evento">
-        <h2>Información del Evento</h2>
-        <p><strong>Fecha:</strong> [Fecha]</p>
-        <p><strong>Ubicación:</strong> [Lugar]</p>
-        <div id="mapa">
-            <!-- Aquí puedes integrar un mapa embebido -->
-        </div>
+    <!-- Sección de Bienvenida -->
+    <section id="welcome" class="section">
+        <h2>¡Nos casamos!</h2>
+        <p>26 Abril 2025</p>
+        <p>We are waiting for you!</p>
     </section>
-
-    <section id="rsvp">
-        <h2>Confirmación de Asistencia</h2>
-        <form action="https://formsubmit.co/tu-email" method="POST">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Correo:</label>
-            <input type="email" id="email" name="email" required>
-            <button type="submit">Confirmar Asistencia</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>¡Esperamos verte en nuestra boda!</p>
-    </footer>
 </body>
 </html>
